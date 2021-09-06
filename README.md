@@ -1,4 +1,4 @@
-
+Using node v12+
 ## Preparing source
 
 - Clone `pancake-swap-core`
