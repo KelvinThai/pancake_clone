@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GNU GENERAL PUBLIC LICENSE V3
-pragma solidity =0.8.3;
+pragma solidity ^0.8.3;
 
 contract WBNB {
     string public name     = "Wrapped BNB";
