@@ -103,6 +103,19 @@ cp .env.development .env
 	+ INIT_CODE_HASH:  0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66
 	+ PancakeRouter01: 0xf164fC0Ec4E93095b804a4795bBe1e041497b92a
 	+ PancakeRouter:   0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F
+- NOTE: if you deploy on testnet, please change value from mainnet to testnet
+	+ Change REACT_APP_NETWORK_URL & REACT_APP_CHAIN_ID from mainnet to testnet in .env, .evn.development, .env.production, .env.test:
+		+ REACT_APP_NETWORK_URL="https://data-seed-prebsc-1-s1.binance.org:8545"
+		+ REACT_APP_CHAIN_ID="97" 
+	![evn](https://user-images.githubusercontent.com/12929556/133953156-8c915242-2d3e-414a-9c38-7d36a2ca14d5.png)
+
+	+ Change ChainId  and smart contract address from MAINNET TO TESTNET in src/constant/index.ts : ChainId.BSCTESTNET
+	![index_ts](https://user-images.githubusercontent.com/12929556/133953095-fb68bdf3-6ee5-493a-867d-6523c8d86c62.png)
+
+	+ Change ChainId from 56 to 97 and smart contract address from MAINNET to TESTNET in src/constant/token/pancakeswap.json
+	![pancakeswap_json](https://user-images.githubusercontent.com/12929556/133953113-66f757f2-caf7-4888-950c-0a6828812804.png)
+
+	+ 
 	
 - Deploy your own tokens
 	+ Deploy your own tokens and update info (token address + chainId to 97) to `src/constants/token/pancakeswap.json`
